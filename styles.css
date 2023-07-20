@@ -263,6 +263,59 @@ justify-content: center;
 
  /************* Navbar empieza ************/
 
+
+
+ /**************Shopping cart empieza ***************/
+
+/* Estilos para el carrito de compras */
+.cart-container {
+  position: relative;
+  cursor: pointer;
+}
+
+/* Estilos para el ícono del carrito */
+.cart-container img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Estilos para la lista de libros en el carrito */
+.cart-list {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Ocultar la lista del carrito inicialmente */
+.hidden {
+  display: none;
+}
+
+/* Estilos para los elementos de la lista del carrito */
+.cart-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-list li {
+  padding: 4px;
+}
+
+.cart-list li:first-child {
+  font-weight: bold;
+}
+
+
+
+
+ /**************Shopping cart termina ***************/
 /********** Header empieza  **********/
 .top-header {
   background: #f13f31;
