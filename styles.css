@@ -9,6 +9,15 @@ body {
   font-weight: 400;
 }
 
+
+
+/* banner publicitario */
+.slider{ width:40%; background-image: url( ""); height:200px; float:left; }
+.slider-padding{padding:150px 0px 0px 100px;}
+
+
+
+
 html {
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -50,16 +59,17 @@ html {
   width: 100%;
   height: 50px;
   margin: 0px auto;
-  padding: 0px 10px;
+  padding: 0px 180px;
   float: left;
-  background: #df001a;
+  background: #050505;
   border-radius: 2px;
+  
   
 }
 
 #navbar li,
 #navbar li a {
-  background: #df001a;
+  background: #000000;
   float: left;
   position: relative;
 }
@@ -91,7 +101,7 @@ justify-content: center;
 #navbar li a,
 #navbar ul li a {
   font-weight: 700;
-  font-style: italic
+  font-style:normal;
 }
 
 #navbar,
@@ -114,7 +124,7 @@ justify-content: center;
 }
 
 #navbar li a {
-  color: #fff;
+  color: #ffffff;
   display: block;
   font-size: 13px;
   height: 45px;
@@ -153,10 +163,10 @@ justify-content: center;
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-  transition: .8s ease-in-out;
-  -moz-transition: .8s ease-in-out;
-  -o-transition: .8s ease-in-out;
-  -webkit-transition: all .8s ease-in-out
+  transition: .4s ease-in-out;
+  -moz-transition: .4s ease-in-out;
+  -o-transition: .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
 }
 
 #navbar ul li a {
@@ -169,7 +179,8 @@ justify-content: center;
 }
 
 #navbar:hover {
-  height: 350px
+  height: 350px;
+  
 }
 
 #navbar li:hover ul {
@@ -180,7 +191,7 @@ justify-content: center;
 
 #navbar a:hover,
 #navbar li:hover>a {
-  color: #000;
+  color: #8d8b8b;
 }
 
 .clearfix {
@@ -285,7 +296,7 @@ justify-content: center;
 .head1p1 {
   font-size: 12px;
   color: #ffffff;
-  font-family "Helvetica Neue",
+  font-family: "Helvetica Neue",
   Helvetica,
   Arial,
   sans-serif;
@@ -304,7 +315,7 @@ justify-content: center;
 .head1ul li a {
   font-size: 12px;
   color: #ffffff;
-  font-family "Helvetica Neue",
+  font-family: "Helvetica Neue",
   Helvetica,
   Arial,
   sans-serif;
@@ -357,10 +368,10 @@ justify-content: center;
 .cart-sect li a {
   font-size: 14px;
   color: #ffffff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   text-decoration: none;
 }
 
@@ -379,7 +390,7 @@ justify-content: center;
   font-weight: 500;
   color: #2b304a;
   font-size: 17px;
-  font-family Roboto,
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
   sans-serif,
   arial;
   text-decoration: none;
@@ -416,9 +427,9 @@ justify-content: center;
   color: #232b33;
   text-decoration: none;
   font-size: 17px;
-  font-family Roboto,
-  sans-serif,
-  arial;
+  font-family: "Roboto",
+  "sans-serif",
+  "arial";
 }
 
 .product-rating {
@@ -431,9 +442,9 @@ justify-content: center;
   font-weight: 600;
   color: #3c3b3b8c;
   font-size: 12px;
-  font-family Roboto,
-  sans-serif,
-  arial;
+  font-family: "Roboto",
+  "sans-serif",
+  "arial";
 }
 
 .product-discounted-price {
@@ -441,19 +452,19 @@ justify-content: center;
   font-size: 18px;
   letter-spacing: 0.1px;
   font-weight: 600;
-  font-family Roboto,
-  sans-serif,
-  arial;
+  font-family: "Roboto",
+  "sans-serif",
+  "arial";
 }
 
 .product-original-price {
   color: #6f6f6f;
   text-decoration: line-through;
   font-size: 14px;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
 }
 
 .product-discount {
@@ -480,24 +491,24 @@ justify-content: center;
 }
 
 .featured-content h4 {
-  color: #666;
+  color: #e00000;
   font-size: 14px;
   margin: 0 0 5px;
   text-transform: uppercase;
   font-weight: 500;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
 }
 
 .featured-content p {
   font-size: 13px;
   color: #333333;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
 }
 
 .margin-top-8 {
@@ -528,10 +539,10 @@ justify-content: center;
   line-height: 2.5;
   font-size: 15px;
   text-decoration: none;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
 }
 
 .social-media {
@@ -552,10 +563,10 @@ justify-content: center;
   font-size: 18px;
   font-weight: bold;
   color: #fff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   margin-bottom: 10px;
 }
 
@@ -574,9 +585,10 @@ justify-content: center;
   line-height: 2.5;
   font-size: 15px;
   text-decoration: none;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   sans-serif;
 }
 
@@ -584,10 +596,10 @@ justify-content: center;
   font-size: 15px;
   font-weight: bold;
   color: #fff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   text-decoration: none;
 }
 
@@ -595,10 +607,10 @@ justify-content: center;
   font-size: 12px;
   font-weight: bold;
   color: #fff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   text-decoration: none;
 }
 
@@ -611,10 +623,10 @@ justify-content: center;
 .footer2-content {
   font-size: 14px;
   color: #fff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   text-align: center;
 }
 
@@ -629,10 +641,10 @@ justify-content: center;
 .footer2-content {
   font-size: 14px;
   color: #fff;
-  font-family "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: "Helvetica Neue",
+  "Helvetica",
+  "Arial",
+  "sans-serif";
   text-align: center;
 }
 
