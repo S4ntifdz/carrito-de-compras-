@@ -1,7 +1,7 @@
 /********** elementos basicos CSS (empieza) **********/
 html,
 body {
-  font-family Roboto,
+  font-family: Roboto,
   sans-serif,
   arial;
   font-size: 14px;
@@ -12,10 +12,29 @@ body {
 
 
 /* banner publicitario */
-.slider{ width:40%; background-image: url( ""); height:200px; float:left; }
-.slider-padding{padding:150px 0px 0px 100px;}
+.slider {
 
+  display: flex;
+  background-color: #dadada;
+  justify-content: center;
+  /* Centrar horizontalmente */
+  align-items: center;
+  /* Centrar verticalmente */
+  border: 1px solid #ffffff;
+  /* Solo para visualizar el contenedor */
+  margin-bottom: 100px;
 
+}
+
+.slider-content {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.slider img {
+  max-width: 100%;
+  max-height: 100%;
+}
 
 
 html {
@@ -131,18 +150,19 @@ html {
 
 /********** elementos basicos CSS (termina) **********/
 
- /************* Navbar empieza ************/
+/************* Navbar empieza ************/
 
- .ftl_menu {
+.ftl_menu {
   width: 100%;
   height: 50px;
   margin: 0px auto;
+  margin-bottom: 50px;
   padding: 0px 180px;
   float: left;
   background: #050505;
   border-radius: 2px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 #navbar li,
@@ -157,18 +177,19 @@ html {
 .ftl_menu {
   position: relative;
 }
-#content-navbar{
-justify-content: center;
+
+#content-navbar {
+  justify-content: center;
 }
 
-.options-navbar{
+.options-navbar {
   justify-content: center;
 }
 
 #navbar li a,
 #navbar ul li a {
   font-weight: 700;
-  font-style:normal;
+  font-style: normal;
 }
 
 #navbar,
@@ -247,7 +268,7 @@ justify-content: center;
 
 #navbar:hover {
   height: 350px;
-  
+
 }
 
 #navbar li:hover ul {
@@ -261,61 +282,34 @@ justify-content: center;
   color: #8d8b8b;
 }
 
- /************* Navbar empieza ************/
+/************* Navbar empieza ************/
+/* ***************palabra superior deslizante empieza ****************/
 
-
-
- /**************Shopping cart empieza ***************/
-
-/* Estilos para el carrito de compras */
-.cart-container {
-  position: relative;
-  cursor: pointer;
+.word-slide {
+  white-space: nowrap; 
+  overflow: hidden; 
 }
 
-/* Estilos para el ícono del carrito */
-.cart-container img {
-  width: 30px;
-  height: 30px;
+.word-slide span {
+  display: inline-block;
+  animation: slideLeft 10s linear infinite;
+  transform: translateX(100vw); 
+  position: relative; 
 }
 
-/* Estilos para la lista de libros en el carrito */
-.cart-list {
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 200px;
-  background-color: #f8f8f8;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
-  padding: 8px;
-  display: flex;
-  justify-content: center;
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100vw);
+  }
+  100% {
+    transform: translateX(-100%); 
+  }
 }
+.container-word {
+  width: 100%;
 
-/* Ocultar la lista del carrito inicialmente */
-.hidden {
-  display: none;
 }
-
-/* Estilos para los elementos de la lista del carrito */
-.cart-list ul {
-  list-style: none;
-  padding: 0;
-}
-
-.cart-list li {
-  padding: 4px;
-}
-
-.cart-list li:first-child {
-  font-weight: bold;
-}
-
-
-
-
- /**************Shopping cart termina ***************/
+/* ***************palabra superior deslizante termina ****************/
 /********** Header empieza  **********/
 .top-header {
   background: #f13f31;
@@ -327,9 +321,9 @@ justify-content: center;
   font-size: 12px;
   color: #ffffff;
   font-family: "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+    Helvetica,
+    Arial,
+    sans-serif;
 }
 
 .head1ul {
@@ -346,9 +340,9 @@ justify-content: center;
   font-size: 12px;
   color: #ffffff;
   font-family: "Helvetica Neue",
-  Helvetica,
-  Arial,
-  sans-serif;
+    Helvetica,
+    Arial,
+    sans-serif;
   text-decoration: none;
 }
 
@@ -365,22 +359,24 @@ justify-content: center;
 /**********  Logo / Search Panel empieza  **********/
 .search-panel {
   background: #f13f31;
-  padding: 12px 0px;
+  padding: 15px 0px;
 }
 
 .search-textbox {
   padding-left: 16px;
   height: 40px;
   width: 80%;
-  border: 1px solid #fff;
+  border: 1px solid #636060;
+
+  border-radius: 10px 0px 0px 10px;
   float: left;
 }
 
 .search-button {
   height: 42px;
   width: 55px;
-  border: none;
-  background: white;
+  border-radius: 0px 10px 10px 0px;
+  background: rgb(255, 255, 255);
   float: left;
 }
 
@@ -403,9 +399,9 @@ justify-content: center;
   font-size: 14px;
   color: #ffffff;
   font-family: "Helvetica Neue",
-  "Helvetica",
-  "Arial",
-  "sans-serif";
+    "Helvetica",
+    "Arial",
+    "sans-serif";
   text-decoration: none;
 }
 
@@ -428,9 +424,9 @@ justify-content: center;
   font-weight: 500;
   color: #2b304a;
   font-size: 17px;
-  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
-  sans-serif,
-  arial;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif,
+    sans-serif,
+    arial;
   text-decoration: none;
 }
 
@@ -454,6 +450,7 @@ justify-content: center;
 
 .product-img {
   width: auto;
+
   height: 100px;
 }
 
@@ -462,7 +459,7 @@ justify-content: center;
 }
 
 .product-border {
-  border: 1px solid #d1d1d1;
+  border: 10px solid #d1d1d1;
   padding: 20px;
 }
 
@@ -471,8 +468,8 @@ justify-content: center;
   text-decoration: none;
   font-size: 17px;
   font-family: "Roboto",
-  "sans-serif",
-  "arial";
+    "sans-serif",
+    "arial";
 }
 
 .product-rating {
@@ -486,8 +483,8 @@ justify-content: center;
   color: #3c3b3b8c;
   font-size: 12px;
   font-family: "Roboto",
-  "sans-serif",
-  "arial";
+    "sans-serif",
+    "arial";
 }
 
 .product-discounted-price {
@@ -496,8 +493,8 @@ justify-content: center;
   letter-spacing: 0.1px;
   font-weight: 600;
   font-family: "Roboto",
-  "sans-serif",
-  "arial";
+    "sans-serif",
+    "arial";
 }
 
 .product-original-price {
@@ -505,9 +502,9 @@ justify-content: center;
   text-decoration: line-through;
   font-size: 14px;
   font-family: "Helvetica Neue",
-  "Helvetica",
-  "Arial",
-  "sans-serif";
+    "Helvetica",
+    "Arial",
+    "sans-serif";
 }
 
 .product-discount {
@@ -526,8 +523,56 @@ justify-content: center;
 }
 
 /**********   Product-Section termina  **********/
+/* **************** CAROUSEL EMPIEZA ******************** */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  /* Puedes ajustar este valor según el tamaño deseado */
+  margin: 0 auto;
+  overflow: hidden;
+  padding-bottom: 100px;
+}
 
+.carousel {
+  display: flex;
+  transition: transform 0.4s ease;
+}
 
+.slide {
+  flex: 0 0 100%;
+  /* Cada slide ocupa el 100% del ancho */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(221, 215, 215, 0.5);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  padding-right: 5px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 0;
+}
+
+.right-arrow {
+  right: 0;
+}
+
+/* **************** CAROUSEL TERMINA ********************  */
 
 /**********  Feature-Section empieza  **********/
 .featured-content i {
@@ -543,18 +588,18 @@ justify-content: center;
   text-transform: uppercase;
   font-weight: 500;
   font-family: "Helvetica Neue",
-  "Helvetica",
-  "Arial",
-  "sans-serif";
+    "Helvetica",
+    "Arial",
+    "sans-serif";
 }
 
 .featured-content p {
   font-size: 13px;
   color: #333333;
   font-family: "Helvetica Neue",
-  "Helvetica",
-  "Arial",
-  "sans-serif";
+    "Helvetica",
+    "Arial",
+    "sans-serif";
 }
 
 .margin-top-8 {
@@ -562,7 +607,7 @@ justify-content: center;
 }
 
 .featured-border {
-  border: 1px solid #ebebeb;
+  border: 1px solid #ffffff;
   width: 100%;
   float: left;
   padding: 15px 0px;
@@ -577,7 +622,7 @@ justify-content: center;
 
 /**********  Footer-Section empieza  **********/
 
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -634,6 +679,7 @@ justify-content: center;
   padding: 0;
   margin: 0;
 }
+
 .ion-icon {
   position: absolute;
   right: 8px;
@@ -641,6 +687,7 @@ justify-content: center;
   font-size: 1.5em;
   top: 20px;
 }
+
 /* ....................ionicon.................. */
 
 .icon-button {
@@ -660,10 +707,14 @@ justify-content: center;
 }
 
 ion-icon {
-  font-size: 30px; /* Cambia el tamaño del icono */
-  color: rgb(98, 98, 98); /* Cambia el color del icono */
-  margin-right: 1px; /* Agrega un margen derecho al icono */
+  font-size: 30px;
+  /* Cambia el tamaño del icono */
+  color: rgb(98, 98, 98);
+  /* Cambia el color del icono */
+  margin-right: 1px;
+  /* Agrega un margen derecho al icono */
 }
+
 /* ....................fin ionicon.............. */
 .social-icons li {
   display: inline-block;
@@ -691,22 +742,25 @@ ion-icon {
 
 @media (max-width: 768px) {
   .footer-content {
-      grid-template-columns: repeat(1, 1fr);
-      row-gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
   }
-  .footer-menu{
-      text-align: left;
+
+  .footer-menu {
+    text-align: left;
   }
+
   .footer-menu li {
     display: block;
     margin-bottom: 10px;
   }
 }
 
-.attribute{
+.attribute {
   position: absolute;
   bottom: 10px;
 }
+
 /**********   Footer-Section CSS Code Ends  **********/
 /**********  Footer-bottom Section CSS Code Starts  **********/
 .footer2-bacbor {
@@ -719,9 +773,9 @@ ion-icon {
   font-size: 14px;
   color: #fff;
   font-family: "Helvetica Neue",
-  "Helvetica",
-  "Arial",
-  "sans-serif";
+    "Helvetica",
+    "Arial",
+    "sans-serif";
   text-align: center;
 }
 

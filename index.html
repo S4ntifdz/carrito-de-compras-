@@ -1,349 +1,553 @@
-<!---------- Meta HTML Starts --------->
+
+
+<!-- PARA LOS ICONOS Y FUENTE SE USA LA LIBRERIA FONT AWESOME, TOTALMENTE ABIERTA AL CAMBIO -->
+<!---------- --------->
 <html>
-   <head>
-      <title>Website Site</title>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-<!---------- Meta HTML Ends --------->
-<!---------- Top Header HTML Code Starts --------->
-<!-- <div class="width-100 top-header">
-    <div class="container">
-      <div class="width-50">
-        <p class="head1p1 headquote">Dezven: India's Fastest Online Shopping Destination </p>
+  <head>
+    <title>Website Site</title>
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!----------  --------->
+
+    <!---------- EMPIEZA TOPE DEL HEADER --------->
+    <!-- hecho solamente por picardia mia, queria ver como quedaba nada mas. -->
+    <div class="width-100 top-header">
+      <div class="container-word">
+
+        <div class="word-slide">
+          <span>HOY 25% DE DESCUENTO EN LIBROS DE FANTASIA</span>
+        </div>
+        </div>
       </div>
-      <div class="width-50">
-        <ul class="head1ul cashback-sect">
-          <li>
-            <i class="fa fa-users" aria-hidden="true"></i>
-            <a class="head1mr" href="#">Refer Your Friend And Earn Rs. 500 Cashback</a>
-          </li>
-          <li>
-            <i class="fa fa-mobile" aria-hidden="true"></i>
-            <a href="#"> Download App</a>
-          </li>
-        </ul>
-        </p>
-      </div>
-    </div>
-  </div> -->
-  <!---------- Top Header HTML Code Ends --------->
-  <!---------- Logo and Search Panel HTML Code Starts --------->
-<div class="width-100 search-panel">
-    <div class="container">
-      <div class="width-20">
-        <img src="" class="logo" alt="[Logotipo]">
-      </div>
-      <div class="width-50">
-        <input class="search-textbox" type="text" Placeholder="Busqueda por titulo o autor">
-        <button class="search-button">
-          <i class="fa fa-search" aria-hidden="true"></i>
-        </button>
-      </div>
-      <div class="width-30">
-        <ul class="cart-sect">
-          <li>
-            <i class="fa fa-heart-o" aria-hidden="true"></i>
-            <a class="head1mr" href="#">Lista de deseos </a>
-          </li>
-          <li>
-            <i class="fa fa-user-circle-o" aria-hidden="true"></i>
-            <a href="#"> Iniciar sesion </a>
-          </li>
-          <li>
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-            <a href="#"> Carro (0)</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <!---------- Logo and Search Panel HTML Code Ends --------->
-  <!---------- Main Menu HTML Code Starts --------->
 
+    <!---------- TTERMINA TOPE DEL HADER --------->
 
+    <!---------- EMPIEZA SEARCH PANEL --------->
+    <div class="width-100 search-panel">
+      <div class="container">
+        <div class="width-20">
+          <img src class="logo" alt="[Logotipo]">
+        </div>
+        <div class="width-50">
+          <input class="search-textbox" type="text"
+            Placeholder="Busqueda por titulo o autor">
+          <button class="search-button">
+            <i aria-hidden="true"><ion-icon name="search-outline"></ion-icon>
+            </i>
+          </button>
+        </div>
+        <div class="width-30">
 
-  <div class="ftl_menu">
-    <div class="content-navbar">
-    <ul id="navbar" class="options-navbar">
-      <li>
-        <a href="#">Pagina principal</a>
-      </li>
+          <!-- seccion del carro -->
 
-
-      <li>
-        <a href="#">Ofertas</a>
-      </li>          
-      
-      
-      <li>
-        <a href="#">Mas vendidos</a>
-      </li>
-
-      <li><a href="#">Categorias &nbsp;<i class="fa fa-caret-down"></i></a>
-        <ul>
-          <li><a href="#!"> Tecnicos</a></li>
-          <li><a href="#!"> Literatura </a></li>
-                  <li><a href="#!"> Fantasia</a></li>
-                  <li><a href="#!"> Terror</a></li>
-        </ul>
-      </li>
-
-      
-
-
-      <li>
-        <a href="#">Mercado de Usados</a>
-      </li>
-
-      <li>
-        <a href="#">Vender</a>
-      </li>
-
-
-
-      <div class="cart-container" onmouseover="showCart()">
-        <img src="" alt="Carrito de compras">
-        <div id="cart-list" class="cart-list hidden">
-          <ul>
-            <!-- Aquí se mostrarán los libros agregados al carrito -->
-            <!-- Puedes agregar elementos dinámicamente mediante JavaScript -->
-            <!-- Por defecto, se muestra "Carrito vacío" -->
-            <li>Carrito vacío</li>
-            <li>Carrito vacío</li>
-            <li>Carrito vacío</li>
-            <li>Carrito vacío</li>
+          <ul class="cart-sect">
+            <li>
+              <i class="fa fa-heart-o" aria-hidden="true"></i>
+              <a class="head1mr" href="#">Lista de deseos </a>
+            </li>
+            <li>
+              <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+              <a href="#"> Iniciar sesion </a>
+            </li>
+            <li>
+              <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              <a href="#"> Carro (0)</a>
+            </li>
           </ul>
         </div>
       </div>
+    </div>
+    <!---------- TERMINA SEARCH PANEL --------->
 
+    <!---------- EMPIEZA NAVBAR --------->
 
-      <!-- <li><a href="#">Carrito (0) &nbsp;<i class="fa fa-caret-down"></i></a>
-        <ul>
-          <li><a href="#!"> </a></li>
-          <li><a href="#!">  </a></li>
-          <li><a href="#!"> </a></li>
-          <li><a href="#!"> </a></li>
+    <div class="ftl_menu">
+      <div class="content-navbar">
+        <ul id="navbar" class="options-navbar">
+          <li>
+            <a href="#">Pagina principal</a>
+          </li>
+
+          <li>
+            <a href="#">Ofertas</a>
+          </li>
+
+          <li>
+            <a href="#">Mas vendidos</a>
+          </li>
+
+          <li><a href="#">Categorias &nbsp;<i class="fa fa-caret-down"></i></a>
+            <ul>
+              <li><a href="#!"> Tecnicos</a></li>
+              <li><a href="#!"> Literatura </a></li>
+              <li><a href="#!"> Fantasia</a></li>
+              <li><a href="#!"> Terror</a></li>
+            </ul>
+          </li>
+
+          <li>
+            <a href="#">Mercado de Usados</a>
+          </li>
+
+          <li>
+            <a href="#">Vender</a>
+          </li>
+
         </ul>
-      </li> -->
-    </ul>
-  </div>
-</div>
-
-
-
-
-
-
-<!-- 
-
-
-
-<div class="width-100">
-    <div class="container">
-      <ul class="main-menu">
-        <li>
-          <a href="#">Pagina principal</a>
-        </li>
-        <li>
-          <a href="#">Ofertas</a>
-        </li>
-        <li>
-          <a href="#">Mas vendidos</a>
-        </li>
-        <li>
-          <a href="#">Populares</a>
-        </li>
-        <li>
-          <a href="#">Usados</a>
-        </li>
-        <li>
-          <a href="#">Recomendaciones</a>
-        </li>
-        <!-- <li>
-          <a href="#"></a>
-        </li> -->
-      </ul>
+      </div>
     </div>
-  </div> 
-  <!---------- Main Menu HTML Code Ends --------->
 
-  <!---------- Slider HTML Code Starts --------->
-<!-- <div class="width-100">
-    <img class="wimg100 slider" src="backtoschool.png">
-  </div> -->
-  <!---------- Slider HTML Code Ends --------->
+    <!---------- TERMINA NAVBAR --------->
 
-  <!---------- Banner HTML Code Starts --------->
-  <div class="center-container">
-  <div class="slider">
-    <div class="slider-padding">
-      
+    <!---------- Slider HTML Code Starts --------->
+
+    <!---------- Slider HTML Code Ends --------->
+
+    <!---------- EMPIEZA EL BANNER --------->
+    <div class="slider">
+      <div class="slider-content">
+        <img src="backtoschool.png" alt="Back to School">
+      </div>
     </div>
- </div>
-</div>
-  <!---------- Banner HTML Code Ends --------->
 
-<!--  BANNER -->
-<!-- 
-<div class="slider">
-   <div class="slider-padding">
+    <!---------- TERMINA EL BANNER --------->
 
-   </div>
-</div> -->
+    <!--------- EMPIEZA SECCION DE PRODUCTOS ------------->
 
+    <div class="carousel-container">
+      <div class="carousel">
+        <!-- Primer slide -->
+        <div class="slide">
+          <div class="width-25">
+            <div class="product-section">
+              <div class="product-border">
+                <div class="product-img-center">
+                  <a href="#">
+                    <img class="product-img" src="libro.jpeg">
+                  </a>
+                </div>
 
-
-
-
-
-  <!-- Product-Section HTML Code STARTS -->
-<div class="width-100 margin-top-50">
-    <div class="container">
-      <div class="width-25">
-        <div class="product-section">
-          <div class="product-border">
-            <div class="product-img-center">
-              <a href="#">
-                <img class="product-img" src="libro.jpeg">
-              </a>
+                <div>
+                  <p class="product-name">
+                    <a href="#">[titulo libro]</a>
+                  </p>
+                  <p class="product-rating">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <span>(5)</span>
+                  </p>
+                  <p class="product-price">
+                    <span class="product-discounted-price">$1000</span>
+                    <span class="product-original-price">$2000</span>
+                    <span class="product-discount">50%OFF</span>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div>
-              <p class="product-name">
-                <a href="#">[titulo libro]</a>
-              </p>
-              <p class="product-rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <span>(5)</span>
-              </p>
-              <p class="product-price">
-                <span class="product-discounted-price">$1000</span>
-                <span class="product-original-price">$2000</span>
-                <span class="product-discount">50%OFF</span>
-            </div>
-          </div>
-        </div>
-      </div>
+            <div class="width-25">
+              <div class="product-section">
+                <div class="product-border">
+                  <div class="product-img-center">
+                    <a href="#">
+                      <img class="product-img" src="libro.jpeg">
+                    </a>
+                  </div>
+
+                  <div>
+                    <p class="product-name">
+                      <a href="#">[titulo libro]</a>
+                    </p>
+                    <p class="product-rating">
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <i class="fa fa-star" aria-hidden="true"></i>
+                      <span>(5)</span>
+                    </p>
+                    <p class="product-price">
+                      <span class="product-discounted-price">$1000</span>
+                      <span class="product-original-price">$2000</span>
+                      <span class="product-discount">50%OFF</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="width-25">
+                <div class="product-section">
+                  <div class="product-border">
+                    <div class="product-img-center">
+                      <a href="#">
+                        <img class="product-img" src="libro.jpeg">
+                      </a>
+                    </div>
+
+                    <div>
+                      <p class="product-name">
+                        <a href="#">[titulo libro]</a>
+                      </p>
+                      <p class="product-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>(5)</span>
+                      </p>
+                      <p class="product-price">
+                        <span class="product-discounted-price">$1000</span>
+                        <span class="product-original-price">$2000</span>
+                        <span class="product-discount">50%OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="width-25">
+                  <div class="product-section">
+                    <div class="product-border">
+                      <div class="product-img-center">
+                        <a href="#">
+                          <img class="product-img" src="libro.jpeg">
+                        </a>
+                      </div>
+
+                      <div>
+                        <p class="product-name">
+                          <a href="#">[titulo libro]</a>
+                        </p>
+                        <p class="product-rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <span>(5)</span>
+                        </p>
+                        <p class="product-price">
+                          <span class="product-discounted-price">$1000</span>
+                          <span class="product-original-price">$2000</span>
+                          <span class="product-discount">50%OFF</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="width-25">
+                    <div class="product-section">
+                      <div class="product-border">
+                        <div class="product-img-center">
+                          <a href="#">
+                            <img class="product-img" src="libro.jpeg">
+                          </a>
+                        </div>
+
+                        <div>
+                          <p class="product-name">
+                            <a href="#">[titulo libro]</a>
+                          </p>
+                          <p class="product-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(5)</span>
+                          </p>
+                          <p class="product-price">
+                            <span class="product-discounted-price">$1000</span>
+                            <span class="product-original-price">$2000</span>
+                            <span class="product-discount">50%OFF</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="width-25">
+                      <div class="product-section">
+                        <div class="product-border">
+                          <div class="product-img-center">
+                            <a href="#">
+                              <img class="product-img" src="libro.jpeg">
+                            </a>
+                          </div>
+
+                          <div>
+                            <p class="product-name">
+                              <a href="#">[titulo libro]</a>
+                            </p>
+                            <p class="product-rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <span>(5)</span>
+                            </p>
+                            <p class="product-price">
+                              <span class="product-discounted-price">$1000</span>
+                              <span class="product-original-price">$2000</span>
+                              <span class="product-discount">50%OFF</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="width-25">
+                        <div class="product-section">
+                          <div class="product-border">
+                            <div class="product-img-center">
+                              <a href="#">
+                                <img class="product-img" src="libro.jpeg">
+                              </a>
+                            </div>
+
+                            <div>
+                              <p class="product-name">
+                                <a href="#">[titulo libro]</a>
+                              </p>
+                              <p class="product-rating">
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <i class="fa fa-star" aria-hidden="true"></i>
+                                <span>(5)</span>
+                              </p>
+                              <p class="product-price">
+                                <span class="product-discounted-price">$1000</span>
+                                <span class="product-original-price">$2000</span>
+                                <span class="product-discount">50%OFF</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="width-25">
+                          <div class="product-section">
+                            <div class="product-border">
+                              <div class="product-img-center">
+                                <a href="#">
+                                  <img class="product-img" src="libro.jpeg">
+                                </a>
+                              </div>
+
+                              <div>
+                                <p class="product-name">
+                                  <a href="#">[titulo libro]</a>
+                                </p>
+                                <p class="product-rating">
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <i class="fa fa-star" aria-hidden="true"></i>
+                                  <span>(5)</span>
+                                </p>
+                                <p class="product-price">
+                                  <span class="product-discounted-price">$1000</span>
+                                  <span class="product-original-price">$2000</span>
+                                  <span class="product-discount">50%OFF</span>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--****************** Segundo slide ********************-->
+
+                        <div class="slide">
+                          <div class="width-25">
+                            <div class="product-section">
+                              <div class="product-border">
+                                <div class="product-img-center">
+                                  <a href="#">
+                                    <img class="product-img" src="libro.jpeg">
+                                  </a>
+                                </div>
+
+                                <div>
+                                  <p class="product-name">
+                                    <a href="#">[titulo libro]</a>
+                                  </p>
+                                  <p class="product-rating">
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <span>(5)</span>
+                                  </p>
+                                  <p class="product-price">
+                                    <span class="product-discounted-price">$1000</span>
+                                    <span class="product-original-price">$2000</span>
+                                    <span class="product-discount">50%OFF</span>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="width-25">
+                              <div class="product-section">
+                                <div class="product-border">
+                                  <div class="product-img-center">
+                                    <a href="#">
+                                      <img class="product-img" src="libro.jpeg">
+                                    </a>
+                                  </div>
+
+                                  <div>
+                                    <p class="product-name">
+                                      <a href="#">[titulo libro]</a>
+                                    </p>
+                                    <p class="product-rating">
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <i class="fa fa-star" aria-hidden="true"></i>
+                                      <span>(5)</span>
+                                    </p>
+                                    <p class="product-price">
+                                      <span class="product-discounted-price">$1000</span>
+                                      <span class="product-original-price">$2000</span>
+                                      <span class="product-discount">50%OFF</span>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="width-25">
+                                <div class="product-section">
+                                  <div class="product-border">
+                                    <div class="product-img-center">
+                                      <a href="#">
+                                        <img class="product-img"
+                                          src="libro.jpeg">
+                                      </a>
+                                    </div>
+
+                                    <div>
+                                      <p class="product-name">
+                                        <a href="#">[titulo libro]</a>
+                                      </p>
+                                      <p class="product-rating">
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <i class="fa fa-star" aria-hidden="true"></i>
+                                        <span>(5)</span>
+                                      </p>
+                                      <p class="product-price">
+                                        <span class="product-discounted-price">$1000</span>
+                                        <span class="product-original-price">$2000</span>
+                                        <span class="product-discount">50%OFF</span>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="width-25">
+                                  <div class="product-section">
+                                    <div class="product-border">
+                                      <div class="product-img-center">
+                                        <a href="#">
+                                          <img class="product-img"
+                                            src="libro.jpeg">
+                                        </a>
+                                      </div>
+
+                                      <div>
+                                        <p class="product-name">
+                                          <a href="#">[titulo libro]</a>
+                                        </p>
+                                        <p class="product-rating">
+                                          <i class="fa fa-star"
+                                            aria-hidden="true"></i>
+                                          <i class="fa fa-star"
+                                            aria-hidden="true"></i>
+                                          <i class="fa fa-star"
+                                            aria-hidden="true"></i>
+                                          <i class="fa fa-star"
+                                            aria-hidden="true"></i>
+                                          <i class="fa fa-star"
+                                            aria-hidden="true"></i>
+                                          <span>(5)</span>
+                                        </p>
+                                        <p class="product-price">
+                                          <span class="product-discounted-price">$1000</span>
+                                          <span class="product-original-price">$2000</span>
+                                          <span class="product-discount">50%OFF</span>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="width-25">
+                                    <div class="product-section">
+                                      <div class="product-border">
+                                        <div class="product-img-center">
+                                          <a href="#">
+                                            <img class="product-img"
+                                              src="libro.jpeg">
+                                          </a>
+                                        </div>
+
+                                        <div>
+                                          <p class="product-name">
+                                            <a href="#">[titulo libro]</a>
+                                          </p>
+                                          <p class="product-rating">
+                                            <i class="fa fa-star"
+                                              aria-hidden="true"></i>
+                                            <i class="fa fa-star"
+                                              aria-hidden="true"></i>
+                                            <i class="fa fa-star"
+                                              aria-hidden="true"></i>
+                                            <i class="fa fa-star"
+                                              aria-hidden="true"></i>
+                                            <i class="fa fa-star"
+                                              aria-hidden="true"></i>
+                                            <span>(5)</span>
+                                          </p>
+                                          <p class="product-price">
+                                            <span
+                                              class="product-discounted-price">$1000</span>
+                                            <span class="product-original-price">$2000</span>
+                                            <span class="product-discount">50%OFF</span>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                                <button class="arrow left-arrow"><ion-icon
+                                    name="caret-back-outline"></ion-icon></button>
+                                <button class="arrow right-arrow"><ion-icon
+                                    name="caret-forward-outline"></ion-icon></button>
+                              </div></div>
+
+                            <!-- 
 
 
-      <div class="width-25">
-        <div class="product-section">
-          <div class="product-border">
-            <div class="product-img-center">
-              <a href="#">
-                <img class="product-img" src="libro.jpeg">
-              </a>
-            </div>
-
-            
-            <div>
-              <p class="product-name">
-                <a href="#">[titulo libro]<a>
-              </p>
-              <p class="product-rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <span>(5)</span>
-              </p>
-              <p class="product-price">
-<span class="product-discounted-price">$1000</span>
-                <span class="product-original-price">$2000</span>
-                <span class="product-discount">50%OFF</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="width-25">
-        <div class="product-section">
-          <div class="product-border">
-            <div class="product-img-center">
-              <a href="#">
-                <img class="product-img" src="libro.jpeg">
-              </a>
-            </div>
 
 
+    <div class="width-100 margin-top-50">
+      <div class="container">
+        <div class="width-25">
+          <div class="product-section">
+            <div class="product-border">
+              <div class="product-img-center">
+                <a href="#">
+                  <img class="product-img" src="libro.jpeg">
+                </a>
+              </div>
 
-
-            <div>
-              <p class="product-name">
-                <a href="#">[titulo libro]</a>
-              </p>
-              <p class="product-rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <span>(5)</span>
-              </p>
-              <p class="product-price">
-                <span class="product-discounted-price">$1000</span>
-                <span class="product-original-price">$2000</span>
-                <span class="product-discount">50%OFF</span>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="width-25">
-        <div class="product-section">
-          <div class="product-border">
-            <div class="product-img-center">
-              <a href="#">
-                <img class="product-img" src="libro.jpeg">
-              </a>
-            </div>
-
-
-
-
-
-
-            <div>
-              <p class="product-name">
-                <a href="#">[titulo libro]</a>
-              </p>
-              <p class="product-rating">
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <i class="fa fa-star" aria-hidden="true"></i>
-                <span>(5)</span>
-              </p>
-              <p class="product-price">
-                <span class="product-discounted-price">$1000</span>
-                <span class="product-original-price">$2000</span>
-                <span class="product-discount">50%OFF</span>
-            </div>
-
-
-
-          </div>
-        </div>
-      </div>
-      <div class=" width-25">
-        <div class="product-section">
-          <div class="product-border">
-            <div class="product-img-center">
-              <a href="#">
-                <img class="product-img" src="libro.jpeg">
-              </a>
-            </div> 
-
-
-
-
-            <div>
+              <div>
                 <p class="product-name">
                   <a href="#">[titulo libro]</a>
                 </p>
@@ -356,139 +560,264 @@
                   <span>(5)</span>
                 </p>
                 <p class="product-price">
-                    <span class="product-discounted-price">$1000</span>
-                    <span class="product-original-price">$2000</span>
-                    <span class="product-discount">50%OFF</span>
+                  <span class="product-discounted-price">$1000</span>
+                  <span class="product-original-price">$2000</span>
+                  <span class="product-discount">50%OFF</span>
+                </div>
               </div>
-         
-
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!---------- Product-Section HTML Code Ends --------->
-  <!-- Featured-Section HTML Code STARTS -->
-<!-- <div class="width-100 margin-top-50 feature-sect">
-    <div class="container">
-      <div class="width-20 featured-padding">
-        <div class="featured-border">
-          <div class="width-20 featured-content">
-            <i class="fa fa-truck" aria-hidden="true"></i>
-          </div>
-          <div class="width-80 featured-content margin-top-8">
-            <h4>Instant Delivery</h4>
-            <p>One day shipping on all order</p>
-          </div>
-        </div>
-      </div>
-      <div class="width-20">
-        <div class="featured-border">
-          <div class="featured-bord">
-            <div class="width-20 featured-content">
-              <i class="fa fa-circle-o" aria-hidden="true"></i>
-            </div>
-            <div class="width-80 featured-content margin-top-8">
-              <h4>ONLINE SUPPORT 24/7</h4>
-              <p>Support online 24 hours a day</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="width-20">
-        <div class="featured-border">
-          <div class="width-20 featured-content">
-            <i class="fa fa-life-ring" aria-hidden="true"></i>
-          </div>
-          <div class="width-80 featured-content margin-top-8">
-            <h4>TRY AND BUY</h4>
-            <p>Try Product, If you like it then buy it</p>
-          </div>
-        </div>
-      </div>
-      <div class="width-20">
-        <div class="featured-border">
-          <div class="width-20 featured-content">
-            <i class="fa fa-gift" aria-hidden="true"></i>
-          </div>
-          <div class="width-80 featured-content margin-top-8">
-            <h4>INSTANT DISCOUNT</h4>
-            <p>Upto 50% instant discount on all product</p>
-          </div>
-        </div>
-      </div>
-      <div class="width-20">
-        <div class="featured-border">
-          <div class="width-20 featured-content">
-            <i class="fa fa-credit-card" aria-hidden="true"></i>
-          </div>
-          <div class="width-80 featured-content margin-top-8">
-            <h4>SECURE PAYMENT</h4>
-            <p>All cards accepted</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-  <!---------- Featured-Section HTML Code Ends --------->
-  <!-- Footer-Section HTML Code STARTS -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <div class="footer-logo">
-          Logo
-        </div>
-        <div class="footer-links">
-          <ul class="footer-menu">
-            <li><a href="#">info@NOMBRE.com.ar</a></li><br><br>
-            <li><a href="#">Zeballos 1341</a></li><br><br>
-            <li><a href="#">0341 448 0102</a></li><br><br>
-          </ul>
-        </div>
-        <div class="footer-social">
-          <ul class="social-icons">
-            <li>
-              <button type="button" class="icon-button" id="python-button" data-lang="python">
-              <ion-icon name="logo-facebook"></ion-icon></button>
-          </li>
-            <li><button type="button" class="icon-button" id="python-button" data-lang="python">
-              <ion-icon name="headset-outline"></ion-icon></button>
-            </li>
-            <li>
-              <button type="button" class="icon-button" id="python-button" data-lang="python">
-                <ion-icon name="logo-instagram"></ion-icon></button>
-            </li>
-            <li>
-              <button type="button" class="icon-button" id="python-button" data-lang="python">
-                <ion-icon name="logo-whatsapp"></ion-icon></button> 
-             </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; Pagina desarrollada por: .</p>
-      </div>
-    </div>
-  </footer>
 
+          <div class="width-25">
+            <div class="product-section">
+              <div class="product-border">
+                <div class="product-img-center">
+                  <a href="#">
+                    <img class="product-img" src="libro.jpeg">
+                  </a>
+                </div>
 
+                <div>
+                  <p class="product-name">
+                    <a href="#">[titulo libro]<a>
+                      </p>
+                      <p class="product-rating">
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <span>(5)</span>
+                      </p>
+                      <p class="product-price">
+                        <span class="product-discounted-price">$1000</span>
+                        <span class="product-original-price">$2000</span>
+                        <span class="product-discount">50%OFF</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="width-25">
+                  <div class="product-section">
+                    <div class="product-border">
+                      <div class="product-img-center">
+                        <a href="#">
+                          <img class="product-img" src="libro.jpeg">
+                        </a>
+                      </div>
 
-  <!---------- Footer-Section HTML Code Ends --------->
-  <!-- Footer-bottom Section HTML Code STARTS -->
+                      <div>
+                        <p class="product-name">
+                          <a href="#">[titulo libro]</a>
+                        </p>
+                        <p class="product-rating">
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <i class="fa fa-star" aria-hidden="true"></i>
+                          <span>(5)</span>
+                        </p>
+                        <p class="product-price">
+                          <span class="product-discounted-price">$1000</span>
+                          <span class="product-original-price">$2000</span>
+                          <span class="product-discount">50%OFF</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="width-25">
+                    <div class="product-section">
+                      <div class="product-border">
+                        <div class="product-img-center">
+                          <a href="#">
+                            <img class="product-img" src="libro.jpeg">
+                          </a>
+                        </div>
 
-  <!---------- Footer-bottom Section HTML Code Ends --------->
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-<script>
-  // Función para mostrar la lista de libros en el carrito
-  function showCart() {
-    const cartList = document.getElementById('cart-list');
-    cartList.classList.toggle('hidden');
-  }
-</script>
+                        <div>
+                          <p class="product-name">
+                            <a href="#">[titulo libro]</a>
+                          </p>
+                          <p class="product-rating">
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <span>(5)</span>
+                          </p>
+                          <p class="product-price">
+                            <span class="product-discounted-price">$1000</span>
+                            <span class="product-original-price">$2000</span>
+                            <span class="product-discount">50%OFF</span>
+                          </div>
 
-   </body>
-</html>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" width-25">
+                      <div class="product-section">
+                        <div class="product-border">
+                          <div class="product-img-center">
+                            <a href="#">
+                              <img class="product-img" src="libro.jpeg">
+                            </a>
+                          </div>
+
+                          <div>
+                            <p class="product-name">
+                              <a href="#">[titulo libro]</a>
+                            </p>
+                            <p class="product-rating">
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <i class="fa fa-star" aria-hidden="true"></i>
+                              <span>(5)</span>
+                            </p>
+                            <p class="product-price">
+                              <span class="product-discounted-price">$1000</span>
+                              <span class="product-original-price">$2000</span>
+                              <span class="product-discount">50%OFF</span>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+
+                            <!---------- TERMINA SECCION DE PRODUCTOS --------->
+
+                            <!-- EMPIEZA SECCION DE VENTAJAS -->
+                            <div class="width-100 margin-top-50 feature-sect">
+                              <div class="container">
+                                <div class="width-20 featured-padding">
+                                  <div class="featured-border">
+                                    <div class="width-20 featured-content">
+                                      <i class="fa fa-truck" aria-hidden="true"></i>
+                                    </div>
+                                    <div
+                                      class="width-80 featured-content margin-top-8">
+                                      <h4>Delivery Instantaneo</h4>
+                                      <p>Para entregas dentro de Rosario</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="width-20">
+                                  <div class="featured-border">
+                                    <div class="featured-bord">
+                                      <div class="width-20 featured-content">
+                                        <i class="fa fa-circle-o"
+                                          aria-hidden="true"></i>
+                                      </div>
+                                      <div
+                                        class="width-80 featured-content margin-top-8">
+                                        <h4>Soporte Online 24/7</h4>
+                                        <p>Te acompañamos en todo momento! </p>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="width-20">
+                                  <div class="featured-border">
+                                    <div class="width-20 featured-content">
+                                      <i class="fa fa-life-ring"
+                                        aria-hidden="true"></i>
+                                    </div>
+                                    <div
+                                      class="width-80 featured-content margin-top-8">
+                                      <h4>Compra seguro</h4>
+                                      <p>1 semana para devolver post compra!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="width-20">
+                                  <div class="featured-border">
+                                    <div class="width-20 featured-content">
+                                      <i class="fa fa-gift" aria-hidden="true"></i>
+                                    </div>
+                                    <div
+                                      class="width-80 featured-content margin-top-8">
+                                      <h4>Descuentos por puntos</h4>
+                                      <p>Acumula puntos y obten descuentos
+                                        exclusivos!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="width-20">
+                                  <div class="featured-border">
+                                    <div class="width-20 featured-content">
+                                      <i class="fa fa-credit-card"
+                                        aria-hidden="true"></i>
+                                    </div>
+                                    <div
+                                      class="width-80 featured-content margin-top-8">
+                                      <h4>Todos los medios de pagos</h4>
+                                      <p>Aceptamos todas las tarjetas!</p>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <!---------- TERMINA SECCION DE VENTAJAS --------->
+
+                            <!-- EMPIEZA FOOTER -->
+                            <footer class="footer">
+                              <div class="container">
+                                <div class="footer-content">
+                                  <div class="footer-logo">
+                                    Logo
+                                  </div>
+                                  <div class="footer-links">
+                                    <ul class="footer-menu">
+                                      <li><a href="#">info@NOMBRE.com.ar</a></li><br><br>
+                                      <li><a href="#">Zeballos 1341</a></li><br><br>
+                                      <li><a href="#">0341 448 0102</a></li><br><br>
+                                    </ul>
+                                  </div>
+                                  <div class="footer-social">
+                                    <ul class="social-icons">
+                                      <li>
+                                        <button type="button"
+                                          class="icon-button"
+                                          id="python-button" data-lang="python">
+                                          <ion-icon name="logo-facebook"></ion-icon></button>
+                                      </li>
+                                      <li><button type="button"
+                                          class="icon-button"
+                                          id="python-button" data-lang="python">
+                                          <ion-icon name="headset-outline"></ion-icon></button>
+                                      </li>
+                                      <li>
+                                        <button type="button"
+                                          class="icon-button"
+                                          id="python-button" data-lang="python">
+                                          <ion-icon name="logo-instagram"></ion-icon></button>
+                                      </li>
+                                      <li>
+                                        <button type="button"
+                                          class="icon-button"
+                                          id="python-button" data-lang="python">
+                                          <ion-icon name="logo-whatsapp"></ion-icon></button>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="footer-bottom">
+                                  <p>&copy; Pagina desarrollada por: .</p>
+                                </div>
+                              </div>
+                            </footer>
+
+                            <!---------- TERMINA FOOTER --------->
+
+                            <script type="module"
+                              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+                            <script nomodule
+                              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+                            <script src="scripts.js"></script>
+                          </body>
+                        </html>
