@@ -1,0 +1,69 @@
+body{
+    background-color: blanchedalmond;
+}
+.container{
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+/* iconos dentro del input */
+.inputbox ion-icon {
+
+    right: 8px;
+    color: #ffffff;
+    font-size: 1.5em;
+    top: 20px;
+}
+.form-box {
+
+    left: 455px;
+    bottom: 10px;
+    width: 500px;
+    height: 550px;
+    background: #5a5959f7;
+    
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+/* inputs usuario contraseña */
+.inputbox {  
+    position: relative;
+    margin: 30px 0;
+    width: 80%;
+    border-bottom: 4px solid #a5a2a2;
+    border: 4px solid brown;
+}
+
+.inputbox label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);  /* animacion al cargar la pagina */
+    color: #ffffff;
+    font-size: 1.21em;    /* animacion al clickear en el input*/
+    pointer-events: none;
+    transition: .8s;
+}
+/* animacion de subir el campo del input 5px hacia arriba */
+input:focus~label,input:valid~label {
+    top: -5px;
+    transition: .5s;
+}
